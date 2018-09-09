@@ -5,23 +5,34 @@ using System.Text;
 
 namespace SquirrelyUtilities.Net {
     public class Pinger {
+        private string address;
+        private Ping ping = null;
+        private PingReply pingReply;
 
-        public static PingReply Ping(string Address) {
-            Ping ping = null;
+        public Pinger(string Address) {
+            address = Address;
+            ping = new Ping();
+            pingReply = ping.Send(Address);
+        }
+
+        public PingReply Ping() {
             try {
-                ping = new Ping();
-                PingReply reply = ping.Send(Address);
+                PingReply reply = ping.Send(address);
                 return reply;
             } catch (Exception ex) {
                 //todo add logging
-                ping.Dispose();
+                DisposePing();
                 Console.WriteLine(ex);
                 return null;
             } finally {
                 if (ping != null) {
-                    ping.Dispose();
+                    DisposePing();
                 }
             }
         }
+
+        public string GetIP() => pingReply.Address.ToString();
+
+        public void DisposePing() => ping.Dispose();
     }
 }
