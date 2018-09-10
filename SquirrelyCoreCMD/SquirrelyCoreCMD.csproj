@@ -3,9 +3,20 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp2.1</TargetFramework>
+    <ApplicationIcon />
+    <StartupObject />
+    <Authors>Mr. Squirrely</Authors>
+    <Company>MrSquirrely.net</Company>
+    <Version>0.2.0</Version>
+    <Description>A very simple CMD application</Description>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <PackageProjectUrl>https://github.com/MrSquirrelyNet/SquirrelyCoreCMD</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/MrSquirrelyNet/SquirrelyCoreCMD</RepositoryUrl>
+    <PackageLicenseUrl>https://github.com/MrSquirrelyNet/SquirrelyCoreCMD/blob/master/LICENSE</PackageLicenseUrl>
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\ConsoleTables\ConsoleTables.csproj" />
     <ProjectReference Include="..\SquirrelyUtilities\SquirrelyUtilities.csproj" />
   </ItemGroup>
 

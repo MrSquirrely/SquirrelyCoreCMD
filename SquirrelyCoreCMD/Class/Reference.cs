@@ -20,7 +20,7 @@ namespace SquirrelyCoreCMD.Class {
         }
 
         internal static bool HasThirdIsntNull() {
-            if (command.Count > 1 && command[2] != null) {
+            if (command.Count > 2 && command[2] != null) {
                 return true;
             } else {
                 return false;
@@ -28,7 +28,7 @@ namespace SquirrelyCoreCMD.Class {
         }
 
         internal static bool HasFourthInstNull() {
-            if (command.Count > 1 && command[3] != null) {
+            if (command.Count > 3 && command[3] != null) {
                 return true;
             } else {
                 return false;
