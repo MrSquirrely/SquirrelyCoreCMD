@@ -7,13 +7,23 @@
     <StartupObject />
     <Authors>Mr. Squirrely</Authors>
     <Company>MrSquirrely.net</Company>
-    <Version>0.2.0</Version>
+    <Version>1.9.5.0</Version>
     <Description>A very simple CMD application</Description>
     <NeutralLanguage>en-US</NeutralLanguage>
     <PackageProjectUrl>https://github.com/MrSquirrelyNet/SquirrelyCoreCMD</PackageProjectUrl>
     <RepositoryUrl>https://github.com/MrSquirrelyNet/SquirrelyCoreCMD</RepositoryUrl>
     <PackageLicenseUrl>https://github.com/MrSquirrelyNet/SquirrelyCoreCMD/blob/master/LICENSE</PackageLicenseUrl>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Start.ps1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Start.ps1">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\ConsoleTables\ConsoleTables.csproj" />

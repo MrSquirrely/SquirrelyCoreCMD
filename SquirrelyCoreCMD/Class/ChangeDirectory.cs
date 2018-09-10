@@ -10,7 +10,7 @@ namespace SquirrelyCoreCMD.Class {
         public static void CD() {
             if (Reference.HasSecondIsntNull()) {
                 if (Reference.command[1].ToLower() == ".." && Reference.inDirectory) {
-                    if (Directory.GetParent(Reference.command[1]) != null) {
+                    if (Directory.GetParent(Reference.currentDirectory) != null) {
                         Reference.currentDirectory = $"{Directory.GetParent(Reference.currentDirectory)}";
                     }
                 }else if (Dir.IsDirectory(Reference.command[1]) != false && Reference.command[1] != "..") {

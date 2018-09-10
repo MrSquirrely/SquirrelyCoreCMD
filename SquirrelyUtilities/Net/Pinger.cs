@@ -22,7 +22,10 @@ namespace SquirrelyUtilities.Net {
             } catch (Exception ex) {
                 //todo add logging
                 DisposePing();
-                Console.WriteLine(ex);
+                Console.WriteLine();
+                Console.WriteLine(ex.Message);
+                Console.WriteLine(ex.StackTrace);
+                Console.WriteLine(ex.Source);
                 return null;
             } finally {
                 if (ping != null) {
@@ -32,7 +35,7 @@ namespace SquirrelyUtilities.Net {
         }
 
         public string GetIP() => pingReply.Address.ToString();
-
         public void DisposePing() => ping.Dispose();
+
     }
 }

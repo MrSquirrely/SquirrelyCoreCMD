@@ -28,21 +28,27 @@ namespace SquirrelyCoreCMD {
 
                 switch (Reference.command[0].ToLower()) {
                     case "ping":
+                        Console.WriteLine();
                         ConsolePing.Ping();
                         break;
                     case "cd":
+                        Console.WriteLine();
                         ChangeDirectory.CD();
                         break;
                     case "dir":
+                        Console.WriteLine();
                         ListDirectory.DIR();
                         break;
                     case "color":
+                        Console.WriteLine();
                         Color.ChangeColor();
                         break;
                     case "date":
+                        Console.WriteLine();
                         Console.WriteLine(DateTime.Now);
                         break;
                     case "echo":
+                        Console.WriteLine();
                         string echo = "";
                         for (int i = 1; i < Reference.command.Count; i++) {
                             echo = $"{echo}{Reference.command[i]} ";
@@ -55,12 +61,14 @@ namespace SquirrelyCoreCMD {
                         break;
                     case "?":
                     case "help":
+                        Console.WriteLine();
                         Help.ShowHelp();
                         break;
                     case "exit":
                         Environment.Exit(0);
                         break;
                     default:
+                        Console.WriteLine();
                         Console.WriteLine("Unknow command, Type in '?' in to see a list of possible commands");
                         break;
                 }
