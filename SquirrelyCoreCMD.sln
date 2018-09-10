@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SquirrelyCoreCMD", "Squirre
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SquirrelyUtilities", "SquirrelyUtilities\SquirrelyUtilities.csproj", "{2DB5ECB7-60FF-4F32-9AFB-2FF1C4F4A106}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleTables", "ConsoleTables\ConsoleTables.csproj", "{B8321563-CBD3-422B-B8D0-D32487A022D5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{2DB5ECB7-60FF-4F32-9AFB-2FF1C4F4A106}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2DB5ECB7-60FF-4F32-9AFB-2FF1C4F4A106}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2DB5ECB7-60FF-4F32-9AFB-2FF1C4F4A106}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8321563-CBD3-422B-B8D0-D32487A022D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8321563-CBD3-422B-B8D0-D32487A022D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8321563-CBD3-422B-B8D0-D32487A022D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8321563-CBD3-422B-B8D0-D32487A022D5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
